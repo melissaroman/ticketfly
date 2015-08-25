@@ -1,8 +1,11 @@
 <h2 id="title">FindTune</h2>
 <h3 id="subtitle">Search for artists similar to an artist you love!</h3>
   <form id="search-form">
-      <input type="text" id="query" value="" class="form-control" />
-      <input type="submit" id="search" value="Search" />
+      <!-- <input type="text" id="query" value="" class="form-control" /> -->
+<!--       <input type="submit" id="search" value="Search" />
+ -->
+      {{input type="text" value=artistName}}
+      <button {{action 'search'}}>Search</button>
   </form>
 
   {{outlet}}
