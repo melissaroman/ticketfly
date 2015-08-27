@@ -1,9 +1,26 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model(params){
-    return $.ajax({
-        url: 'https://api.spotify.com/v1/artists/43ZHCT0cAZBISjO8DG9PnE/related-artists'
+  queryParams: {
+    artistName: {
+      refreshModel: true
+    }
+  },
+  model(queryParams){
+    console.log(queryParams);
+    var a =  $.ajax({
+        url: 'https://api.spotify.com/v1/search',
+        data: {
+          query: queryParams.artistName,
+          type: 'artist'
+        }
+      }).then(function(res){
+        return {artists: res.artists.items}
       });
+    return a;
+
+    // $.ajax({
+    //     url: 'https://api.spotify.com/v1/search/' + artistName
+    //   });
     }
 });
