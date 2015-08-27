@@ -1,9 +1,8 @@
 <div id="results">
   <ul>
-    Hello, I'm at the artists template.
-    {{artistName}}
+    Search Results for {{artistName}}:
     {{#each model.artists as |artist|}}
-      <li>{{artist.name}}</li>
+      <li>{{#link-to 'index.related'}}{{artist.name}}{{/link-to}}</li>
     {{/each}}
   </ul>
 </div>
