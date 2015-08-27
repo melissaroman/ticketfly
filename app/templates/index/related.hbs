@@ -1,2 +1,8 @@
-{{outlet}}
-Hi! I'm on the related template.
+<div id="results-related">
+  <ul>
+    Here are some similar artists that you might like:
+    {{#each model.artists as |artist|}}
+      <li>{{artist.name}}</li>
+    {{/each}}
+  </ul>
+</div>
