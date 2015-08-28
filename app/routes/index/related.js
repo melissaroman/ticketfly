@@ -10,11 +10,10 @@ export default Ember.Route.extend({
     return $.ajax({
         url: 'https://api.spotify.com/v1/artists/' + queryParams.id + '/related-artists',
         data: {
-          query: queryParams.id,
-          type: 'artist'
+          id: queryParams.id,
         }
       }).then(function(res){
-        return {artists: res.artists.items}
+        return {artists: res.artists}
       });
     }
 });
