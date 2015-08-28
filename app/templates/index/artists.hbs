@@ -2,7 +2,7 @@
   <ul class="artist-results">
     Search Results for {{artistName}}:
     {{#each model.artists as |artist|}}
-      <li {{action "select"}} class="search-results">{{#link-to 'index.related' id}}{{artist.name}}{{/link-to}}</li>
+      <li {{action "select" artist.id}} class="search-results"><a href="#">{{artist.name}}</a></li>
     {{/each}}
   </ul>
 </div>

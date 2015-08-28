@@ -7,8 +7,8 @@ export default Ember.Route.extend({
     }
   },
   model(queryParams){
-    var related =  $.ajax({
-        url: 'https://api.spotify.com/v1/artists/' + id + '/related-artists',
+    return $.ajax({
+        url: 'https://api.spotify.com/v1/artists/' + queryParams.id + '/related-artists',
         data: {
           query: queryParams.id,
           type: 'artist'
@@ -16,6 +16,5 @@ export default Ember.Route.extend({
       }).then(function(res){
         return {artists: res.artists.items}
       });
-    return a;
     }
 });
