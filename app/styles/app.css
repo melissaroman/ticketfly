@@ -55,9 +55,8 @@ body{
   padding-top: 1em;
   padding-bottom: 1em;
 }
-.artist-results li{
+.artist-results a{
   padding-top: 0.5em;
   color: #333333;
   font-size: 0.8em;
-  text-decoration: none;
 }
