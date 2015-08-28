@@ -11,7 +11,8 @@ export default Ember.Route.extend({
         url: 'https://api.spotify.com/v1/search',
         data: {
           query: queryParams.artistName,
-          type: 'artist'
+          type: 'artist',
+          limit: 8
         }
       }).then(function(res){
         return {artists: res.artists.items}
