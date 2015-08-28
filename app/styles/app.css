@@ -1,0 +1,42 @@
+.content{
+  text-align: center;
+  /*background-image: url(''../../public/assets/images/Headphones.jpg');*/
+}
+#title{
+  font-size: 2em;
+  font-family: 'Elsie Swash Caps', cursive;
+}
+#subtitle{
+  font-size: 1.5em;
+  font-family: 'Elsie Swash Caps', cursive;
+}
+/*.search-form{
+  width:500px;
+  margin:50px auto;
+}*/
+#search-box{
+  padding:14px 54px;
+  background:rgba(50, 50, 50, 0.1);
+  border:0px solid #AF1795;
+  font-size: 1.2em;
+}
+#search-box:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px #AF1795;
+}
+#search-button{
+  position:relative;
+  padding:12px 25px;
+  left:-8px;
+  border:2px solid #AF1795;
+  background-color:#AF1795;
+  color:#fafafa;
+  font-size: 1.2em;
+}
+#search-button:hover{
+  background-color:#fafafa;
+  color:#AF1795;
+}
+.artist-results{
+  list-style-type: none;
+}
