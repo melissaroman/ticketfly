@@ -65,6 +65,7 @@ body{
 }
 .artist-results a:hover{
   color: #AF1795;
+  transition: 0.1s;
 }
 .related-results{
   padding-top: 0.5em;
