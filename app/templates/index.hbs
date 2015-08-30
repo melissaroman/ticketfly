@@ -1,9 +1,9 @@
 <div class="content">
-  <h2 id="title">FindTune</h2>
-  <h3 id="subtitle">Search for artists based on your favorites!</h3>
-    <form id="search-form">
-        {{input id="search-box" type="text" value=artistName placeholder="Enter artist name"}}
-        <button id="search-button" {{action 'search'}}>Search</button>
+  <h2 class="title">FindTune</h2>
+  <h3 class="subtitle">Search for artists based on your favorites!</h3>
+    <form class="search-form">
+        {{input class="search-box" type="text" value=artistName placeholder="Enter artist name"}}
+        <button class="search-button" {{action 'search'}}>Search</button>
     </form>
 
     {{outlet}}

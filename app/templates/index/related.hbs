@@ -1,8 +1,10 @@
-<div id="results">
+<div class="results">
   <ul class="artist-results">
     Here are some similar artists that you might like:
+    <div class='columns'>
     {{#each model.artists as |artist|}}
       <li class="related-results">{{artist.name}}</li>
     {{/each}}
+  </div>
   </ul>
 </div>
