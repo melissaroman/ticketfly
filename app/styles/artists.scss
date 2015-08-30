@@ -1,0 +1,21 @@
+.artist-results{
+  list-style-type: none;
+  font-size: 1.5em;
+  font-family: 'Fjalla One', sans-serif;
+  color: #191919;
+  background-color: #e4e4e4;
+  opacity: 0.8;
+  width: 50%;
+  margin: auto;
+  margin-top: 2em;
+  padding: 1em;
+  a{
+    padding-top: 0.5em;
+    color: #191919;
+    font-size: 0.8em;
+    &:hover{
+      color: #AF1795;
+      transition: 0.1s;
+    }
+  }
+}

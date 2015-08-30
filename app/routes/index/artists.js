@@ -15,7 +15,7 @@ export default Ember.Route.extend({
           limit: 8
         }
       }).then(function(res){
-        return {artists: res.artists.items}
+        return { artists: res.artists.items };
       });
     }
 });

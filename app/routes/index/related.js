@@ -13,7 +13,7 @@ export default Ember.Route.extend({
           id: queryParams.id,
         }
       }).then(function(res){
-        return {artists: res.artists}
+        return { artists: res.artists };
       });
     }
 });
